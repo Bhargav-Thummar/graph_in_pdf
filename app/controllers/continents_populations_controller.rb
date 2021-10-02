@@ -64,6 +64,6 @@ class ContinentsPopulationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def continents_population_params
-      params.require(:continents_population).permit(:name, :contribution)
+      params.require(:continents_population).permit(:name, :population, :contribution)
     end
 end
