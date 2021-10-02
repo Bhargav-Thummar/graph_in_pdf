@@ -21,7 +21,7 @@
           <td><%= index + 1 %></td>
           <td><%= continents_population.name %></td>
           <td><%= continents_population.population %></td>
-          <td><%= continents_population.contribution %></td>
+          <td><%= continents_population.contribution %>&nbsp %</td>
           <td><%= link_to 'Show', continents_population %></td>
           <td><%= link_to 'Edit', edit_continents_population_path(continents_population) %></td>
           <td><%= link_to 'Destroy', continents_population, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -34,3 +34,8 @@
 <br>
 
 <%= link_to 'New Continents Population', new_continents_population_path %>
+
+<h3 class="my-5">Graph representation</h3>
+
+<%= pie_chart ContinentsPopulation.contribution_distibution_for_graph(), suffix: "%" %>
+
