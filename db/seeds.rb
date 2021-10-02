@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Load all data
+
+ContinentsPopulation.find_or_create_by(name: "Asia", population: 4641054775,contribution: 59.54)
+ContinentsPopulation.find_or_create_by(name: "Africa", population: 1340598147, contribution: 17.20)
+ContinentsPopulation.find_or_create_by(name: "Europe", population: 747636026, contribution: 9.59)
+ContinentsPopulation.find_or_create_by(name: "North America", population: 592072212, contribution: 7.60)
+ContinentsPopulation.find_or_create_by(name: "South America", population: 430759766, contribution: 5.53)
+ContinentsPopulation.find_or_create_by(name: "Australia/Oceania", population: 43111704, contribution: 0.55)
+ContinentsPopulation.find_or_create_by(name: "Antarctica", population: 0, contribution: 0.0)

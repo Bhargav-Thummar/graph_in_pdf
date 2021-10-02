@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Continents Populations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contribution</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @continents_populations.each do |continents_population| %>
+      <tr>
+        <td><%= continents_population.name %></td>
+        <td><%= continents_population.contribution %></td>
+        <td><%= link_to 'Show', continents_population %></td>
+        <td><%= link_to 'Edit', edit_continents_population_path(continents_population) %></td>
+        <td><%= link_to 'Destroy', continents_population, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Continents Population', new_continents_population_path %>

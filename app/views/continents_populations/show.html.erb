@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @continents_population.name %>
+</p>
+
+<p>
+  <strong>Contribution:</strong>
+  <%= @continents_population.contribution %>
+</p>
+
+<%= link_to 'Edit', edit_continents_population_path(@continents_population) %> |
+<%= link_to 'Back', continents_populations_path %>
