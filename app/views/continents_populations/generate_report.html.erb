@@ -1,0 +1,313 @@
+<style>
+  @media print {
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 0.5rem;
+      font-family: inherit;
+      font-weight: 500;
+      line-height: 1.2;
+      color: inherit;
+    }
+    .h5,
+    h5 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    label {
+      font-weight: 700;
+      display: block;
+      font-size: 16px;
+    }
+    .col {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    .bg-white {
+      background-color: #fff !important;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .p-2 {
+      margin: 1rem;
+    }
+
+    .bg-gray {
+      background: #d8d8d8;
+    }
+
+    .pl-3,
+    .px-3 {
+      padding-left: 1rem !important;
+    }
+    .pr-3,
+    .px-3 {
+      padding-right: 1rem !important;
+    }
+    .pb-2,
+    .py-2 {
+      padding-bottom: 0.5rem !important;
+    }
+    .pt-2,
+    .py-2 {
+      padding-top: 0.5rem !important;
+    }
+    .pt-3,
+    .py-3 {
+      padding-top: 1rem !important;
+    }
+    .pb-3,
+    .py-3 {
+      padding-bottom: 1rem !important;
+    }
+    .mr-3,
+    .mx-3 {
+      margin-right: 1rem !important;
+    }
+    .mb-1,
+    .my-1 {
+      margin-bottom: 0.25rem !important;
+    }
+    .mb-3,
+    .my-3 {
+      margin-bottom: 1rem !important;
+    }
+    body {
+      font-size: 14px;
+      background-color: #f5f5f5;
+      margin: 2rem;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+
+    .d-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+  }
+
+  .h3,
+  h3 {
+    white-space: nowrap;
+  }
+
+  .h5,
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  label {
+    font-weight: 700;
+    display: block;
+    font-size: 16px;
+  }
+
+  .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .bg-white {
+    background-color: #fff !important;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .bg-gray {
+    background: #d8d8d8;
+  }
+
+  .pl-3,
+  .px-3 {
+    padding-left: 1rem !important;
+  }
+
+  .pr-3,
+  .px-3 {
+    padding-right: 1rem !important;
+  }
+
+  .pb-2,
+  .py-2 {
+    padding-bottom: 0.5rem !important;
+  }
+
+  .pt-2,
+  .py-2 {
+    padding-top: 0.5rem !important;
+  }
+
+  .pt-3,
+  .py-3 {
+    padding-top: 1rem !important;
+  }
+
+  .pb-3,
+  .py-3 {
+    padding-bottom: 1rem !important;
+  }
+
+  .mr-3,
+  .mx-3 {
+    margin-right: 1rem !important;
+  }
+
+  .mb-1,
+  .my-1 {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .mb-3,
+  .my-3 {
+    margin-bottom: 1rem !important;
+  }
+
+  body {
+    font-size: 14px;
+    background-color: #f5f5f5;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .w-100 {
+    width: 100% !important;
+  }
+
+  .w-33 {
+    width: 33.33% !important;
+  }
+
+  .m-2 {
+    margin: 1rem !important;
+  }
+
+  .m-1 {
+    margin: .5rem !important;
+  }
+
+  .mr-1 {
+    margin-right: .5rem !important;
+  }
+
+  .mx-2 {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+
+  .bg-dark-gray{
+    background-color: #696969;
+    color: #fff;
+  }
+
+  #chart-1 {
+    margin-left: 13rem;
+    margin-bottom: 1rem;
+  }
+
+  canvas {
+    width: 560px !important;
+    height: 560px !important;
+  }
+  /*# sourceMappingURL=print.css.map */
+</style>
+
+<main class="">
+  <div class="">
+   <div class="bg-gray px-3 mb-1 ">
+      <h2 class="w-auto py-2">Report</h2>
+    </div>
+
+    <div class="px-3 mb-1 ">
+      Continent Population Distribution
+    </div>
+    
+    <div id="chartdiv"></div>
+      <%= pie_chart ContinentsPopulation.contribution_distibution_for_graph(), suffix: "%" %>
+  </div>
+</main>
+
+<%# 
+<script>
+  $(document).ready(function(){
+    var chart = AmCharts.makeChart("chartdiv", {
+      "type": "pie",
+      "pdf": true,
+      "theme": "none",
+      "export": {
+        "enabled": true,
+        "pageOrigin": false
+      }
+    });
+
+    // $(".amcharts-export-menu").remove();
+  });
+</script> %>

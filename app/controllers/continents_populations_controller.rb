@@ -56,6 +56,17 @@ class ContinentsPopulationsController < ApplicationController
     end
   end
 
+  def generate_report
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "Report",
+        template: "continents_populations/generate_report.html.erb",
+        layout: 'pdf.html'
+      end
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_continents_population
