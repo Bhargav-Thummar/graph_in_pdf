@@ -61,8 +61,10 @@ class ContinentsPopulationsController < ApplicationController
       format.html
       format.pdf do
         render pdf: "Report",
+        javascript_delay: 5000,
         template: "continents_populations/generate_report.html.erb",
-        layout: 'pdf.html'
+        layout: 'pdf.html',
+        window_status: "FLAG_FOR_PDF"
       end
     end
   end

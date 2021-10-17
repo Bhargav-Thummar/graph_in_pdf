@@ -291,11 +291,10 @@
     </div>
     
     <div id="chartdiv"></div>
-      <%= pie_chart ContinentsPopulation.contribution_distibution_for_graph(), suffix: "%" %>
+    <%= pie_chart ContinentsPopulation.contribution_distibution_for_graph(), discrete: true %>
   </div>
 </main>
 
-<%# 
 <script>
   $(document).ready(function(){
     var chart = AmCharts.makeChart("chartdiv", {
@@ -310,4 +309,4 @@
 
     // $(".amcharts-export-menu").remove();
   });
-</script> %>
+</script>

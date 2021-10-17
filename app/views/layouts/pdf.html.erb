@@ -2,7 +2,31 @@
 <html>
   <head>
     <title>PDF</title>
-    <%= wicked_pdf_stylesheet_link_tag "application" -%>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+
+    <%= wicked_pdf_javascript_include_tag "application", "charts" %>
+
+    <%= wicked_pdf_javascript_include_tag "chartkick" %>
+
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <%# <%= wicked_pdf_javascript_include_tag 'charts' %>
+
+    <script>
+      setTimeout((function () {
+        window.status = "FLAG_FOR_PDF";
+        Object.keys(Chartkick.charts).forEach(function (key) {
+            Chartkick.charts[key].redraw();
+        });
+      }), 3000);
+    </script>
   </head>
 
   <body>
